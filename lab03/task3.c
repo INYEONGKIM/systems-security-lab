@@ -10,8 +10,8 @@ int main() {
 	argv[0] = "/usr/bin/env";
 	argv[1] = NULL;
 	
-	// execve("/usr/bin/env", argv, NULL); // BEFORE
-	execve("/usr/bin/env", argv, environ); // AFTER
+	execve("/usr/bin/env", argv, NULL); // BEFORE
+	//execve("/usr/bin/env", argv, environ); // AFTER
 	
 	return 0;
 }
